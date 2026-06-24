@@ -10,21 +10,15 @@ The wiring diagram below is sourced directly from the **official Xiaozhi AI repo
 
 ---
 
-## My Pin Mapping
-
-Fill this in with your actual wiring once confirmed — useful for anyone trying to copy the exact build:
+## Pin Mapping (bread-compact-wifi / ESP32-S3)
 
 | Component | Pin | ESP32-S3 GPIO |
 |---|---|---|
-| INMP441 (Mic) | SCK | |
-| INMP441 (Mic) | WS | |
-| INMP441 (Mic) | SD | |
-| MAX98357A (Amp) | BCLK | |
-| MAX98357A (Amp) | LRC | |
-| MAX98357A (Amp) | DIN | |
-| OLED (SSD1306) | SDA | |
-| OLED (SSD1306) | SCL | |
-
----
-
-For the most up-to-date version of the circuit diagram, always refer to the [official Xiaozhi AI repo](https://github.com/78/xiaozhi-esp32/tree/main/docs) directly, as they update it across firmware versions.
+| INMP441 (Mic) | WS | GPIO 4 |
+| INMP441 (Mic) | SCK | GPIO 5 |
+| INMP441 (Mic) | SD | GPIO 6 |
+| MAX98357A (Amp) | DIN | GPIO 7 |
+| MAX98357A (Amp) | BCLK | GPIO 15 |
+| MAX98357A (Amp) | LRC | GPIO 16 |
+| OLED (SSD1306) | SDA | GPIO 41 |
+| OLED (SSD1306) | SCL | GPIO 42 |
